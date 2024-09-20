@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -11,6 +11,9 @@ body {
 
 main {
     display: flex;
+    margin-top: 20px;
+    /* text-align: center; */
+    justify-content: center;
     /* padding-left: 30px;
     margin-left: 10px; */
 }
@@ -30,7 +33,7 @@ main {
     color: #ffffff;
 }
 
-label {
+.login-container label {
     display: block;
     margin-bottom: 8px;
     color: #333;
@@ -48,7 +51,7 @@ input[type="password"] {
 button {
     width: 100%;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #4caf50;
     color: white;
     border: none;
     border-radius: 4px;
@@ -83,7 +86,7 @@ form h2 {
 label {
     display: block;
     margin-bottom: 8px;
-    color: #333;
+    color: #fff;
 }
 
 input[type="text"],
@@ -94,12 +97,13 @@ textarea {
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    color: #ccc;
 }
 
 button {
     width: 90%;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #4caf50;
     color: white;
     border: none;
     border-radius: 4px;
@@ -108,4 +112,50 @@ button {
 
 button:hover {
     background-color: #45a049;
+}
+
+footer {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #efe7e7;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        width: 100%;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        justify-content: center;
+    }
+    .login-container {
+        background-color: #ffffff;
+        padding: 20px;
+        width: 300px;
+        justify-content: center;
+        margin-left: 60px;
+    }
+    .contact-form-container {
+        padding: 20px;
+        width: 300px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        justify-content: center;
+        margin-left: 60px;
+    }
+    footer {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: 30px;
+        padding-left: 50px;
+    }
 }
